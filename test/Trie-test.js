@@ -22,8 +22,6 @@ describe('TRIE', () => {
     expect(trie.count).to.eq(1);
     trie.insert('granite');
     expect(trie.count).to.eq(2);
-    trie.insert('good');
-    // trie.insert('great')
   })
 })
 
@@ -36,7 +34,6 @@ describe('TRIE', () => {
       trie.insert('brandlord');
       trie.insert('brand');
 
-      // trie.suggest('bra');
       expect(trie.suggest('bra')).to.equal(['brand', 'brandon', 'brandlord'])
 
 
