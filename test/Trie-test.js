@@ -34,7 +34,8 @@ describe('TRIE', () => {
       trie.insert('brandlord');
       trie.insert('brand');
 
-      expect(trie.suggest('bra')).to.equal(['brand', 'brandon', 'brandlord'])
+
+      expect(trie.suggest('bran')).to.equal(['brand', 'brandon', 'brandlord'])
 
 
 
@@ -49,7 +50,8 @@ describe('TRIE', () => {
 
       trie.populate(dictionary);
 
-      expect(trie.count).to.eq(235886)
+      expect(trie.count).to.eq(235886);
+
     })
   })
 });
